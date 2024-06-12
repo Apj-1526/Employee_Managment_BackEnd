@@ -28,6 +28,11 @@ public class ProjectController {
 		return projectService.getAllProjects();
 	}
 
+	@GetMapping("/completed")
+	public List<Projectinfo> getAllCompletedProjects() {
+		return projectService.getAllCompletedProjects();
+	}
+
 	@PostMapping
 	public ResponseEntity<Projectinfo> createProject(@RequestBody Projectinfo project) {
 		Projectinfo createdProject = projectService.saveProject(project);
