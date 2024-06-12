@@ -63,7 +63,6 @@ public class User implements UserDetails {
     }
 
 	public Object getSalt() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 }
