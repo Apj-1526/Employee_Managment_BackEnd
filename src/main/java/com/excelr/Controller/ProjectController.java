@@ -52,6 +52,4 @@ public class ProjectController {
 		Projectinfo updatedProject = projectService.updateProject(id, projectDetails);
 		return ResponseEntity.ok(updatedProject);
 	}
-
-
 }
