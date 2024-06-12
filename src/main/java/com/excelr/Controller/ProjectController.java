@@ -45,11 +45,11 @@ public class ProjectController {
 		projectService.deleteProject(id);
 		return ResponseEntity.ok().build();
 	}
-
 	@PutMapping("/{id}")
 	public ResponseEntity<Projectinfo> updateProject(@PathVariable Long id, @RequestBody Projectinfo projectDetails) {
 		System.out.println("Updating project with ID: " + id);
 		Projectinfo updatedProject = projectService.updateProject(id, projectDetails);
 		return ResponseEntity.ok(updatedProject);
 	}
+
 }
